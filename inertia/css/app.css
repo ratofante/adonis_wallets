@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .text-body {
+    @apply dark:text-stone-500;
+  }
+  .title-base {
+    @apply font-semibold text-stone-700 dark:text-stone-300;
+  }
+  .text-body {
+    @apply text-stone-600 dark:text-stone-400 leading-7;
+  }
+}
