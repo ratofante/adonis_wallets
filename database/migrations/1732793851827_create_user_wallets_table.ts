@@ -8,7 +8,7 @@ export default class extends BaseSchema {
       table.increments('id')
       table.integer('user_id').unsigned().notNullable().references('users.id').onDelete('CASCADE')
       table
-        .integer('waller_id')
+        .integer('wallet_id')
         .unsigned()
         .notNullable()
         .references('wallets.id')

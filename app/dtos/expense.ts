@@ -12,6 +12,7 @@ export default class ExpenseDto extends BaseModelDto {
   declare amount: number
   declare name: string
   declare description: string
+  declare date: string
   declare createdAt: string
   declare updatedAt: string
   declare user: UserDto | null
@@ -29,6 +30,7 @@ export default class ExpenseDto extends BaseModelDto {
     this.amount = expense.amount
     this.name = expense.name
     this.description = expense.description
+    this.date = expense.date.toISO()!
     this.createdAt = expense.createdAt.toISO()!
     this.updatedAt = expense.updatedAt.toISO()!
     this.user = expense.user && new UserDto(expense.user)

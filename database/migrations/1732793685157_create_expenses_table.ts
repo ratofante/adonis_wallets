@@ -22,7 +22,7 @@ export default class extends BaseSchema {
       table.decimal('amount', 10, 2).notNullable()
       table.string('name', 50).notNullable()
       table.string('description', 191)
-
+      table.timestamp('date').notNullable()
       table.timestamp('created_at')
       table.timestamp('updated_at')
     })
